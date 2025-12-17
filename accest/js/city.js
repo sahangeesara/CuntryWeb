@@ -80,14 +80,7 @@ function updateBackgroundVideo(current) {
   }
 
   const videoElement = document.getElementById("backgroundVideo");
-  
-  // console.log("=== VIDEO UPDATE DEBUG ===");
-  // console.log("Weather condition (original):", current.condition.text);
-  // console.log("Weather condition (lowercase):", weather);
-  // console.log("Is Day:", isDay);
-  // console.log("Selected video:", videoUrl);
-  // console.log("========================");
-  
+   
   videoElement.pause();
   
   const sources = videoElement.querySelectorAll("source");
@@ -102,7 +95,7 @@ function updateBackgroundVideo(current) {
     console.error("Video playback error:", err);
   });
   
-  // console.log(`✅ Video changed to: ${videoUrl}`);
+
 }
 
 function displayWeatherData(data) {
